@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="ru.myapp.zxing3.MainActivity">
+    tools:context="ru.myapp.SellerTryOne.MainActivity">
 
     <Button
         android:id="@+id/btn_scan"
@@ -18,6 +18,14 @@
         android:layout_marginBottom="67dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/showDataBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_db"
+        android:layout_marginBottom="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btn_scan" />
 
     <TextView
         android:id="@+id/result"

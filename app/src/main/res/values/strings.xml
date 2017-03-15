@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">ZXing3</string>
+    <string name="app_name">SellerTryOne</string>
     <string name="scan">Сканировать</string>
     <string name="result">Результат</string>
+    <string name="show_db">База Данных</string>
+    <string name="title_activity_show_data_base">ShowDataBaseActivity</string>
 </resources>
