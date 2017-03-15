@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ZXing3</string>
+    <string name="scan">Сканировать</string>
+    <string name="result">Результат</string>
+</resources>
