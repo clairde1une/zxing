@@ -49,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
         outState.putString("result", (String) tvresult.getText());
     }
 
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        tvresult.setText(savedInstanceState.getString("result"));
-    }
+//    @Override
+//    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+//        super.onRestoreInstanceState(savedInstanceState);
+//        tvresult.setText(savedInstanceState.getString("result"));
+//    }
 }
