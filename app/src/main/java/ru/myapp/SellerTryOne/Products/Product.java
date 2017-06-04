@@ -5,13 +5,13 @@ import com.j256.ormlite.field.DatabaseField;
 public class Product {
 
     @DatabaseField(generatedId = true)
-    int id;
+    private int id;
 
     @DatabaseField
-    String barcode;
+    private String barcode;
 
     @DatabaseField
-    int amount;
+    private int amount;
 
     public Product(){};
 

@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -42,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
         showDataBaseButton = (Button) findViewById(R.id.showDataBase);
         showDataBaseButton.setOnClickListener(showDataBaseActivity());
-
         dbHelper = OpenHelperManager.getHelper(this, DatabaseHelper.class);
 
     }
@@ -77,8 +75,6 @@ public class MainActivity extends AppCompatActivity {
                 QueryBuilder<Product, Integer> queryBuilder = productDao.queryBuilder();
                 queryBuilder.where().eq("barcode", resultOfScanning);
                 List<Product> queryResult = queryBuilder.query();
-                Integer a = queryResult.size();
-                Log.d("Demo", a.toString());
                 if(queryResult.size() == 0) {
                     productDao.create(new Product(resultOfScanning, 1));
                 }

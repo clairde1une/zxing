@@ -14,9 +14,6 @@ import java.sql.SQLException;
 import ru.myapp.SellerTryOne.Products.Product;
 import ru.myapp.SellerTryOne.R;
 
-/**
- * Created by oleg on 27.03.17.
- */
 
 public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
